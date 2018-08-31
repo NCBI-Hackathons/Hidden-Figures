@@ -1,6 +1,24 @@
 # Hidden Figures
 
-Placeholder repo for the upcoming NIH Hackathon. 
+Placeholder repo for the upcoming NIH Hackathon.
+
+### Hypothesis
+
+1. Women are more likely to on the acknowledgments than the author list would suggest.
+2. The acknowledgment of tasks for men and women differs.
+3. These trends change over time, reflecting more equality.
+
+### Timeline / Tasks
+
++ [ ] Download and hash source dataset
++ [ ] Literature search
++ [ ] Extract acknowledgments section and analyze counts
++ [ ] NER names
++ [ ] Evaluate hypothesis #1
++ [ ] Extract job titles/tasks
++ [ ] Evaluate hypothesis #2
++ [ ] NER entities
++ [ ] Evaluate hypothesis #3
 
 ### Data Sources
 
