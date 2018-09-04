@@ -1,6 +1,9 @@
 # Hidden Figures
 
-Placeholder repo for the upcoming NIH Hackathon.
+An investigation into the acknowledgments section of research articles within [PubMed Central](https://www.ncbi.nlm.nih.gov/pmc/).
+Prior literature suggests there is a gender discrepancy between males and females concerning authorship and acknowledgment. 
+Specifically, it has been noted that females are more likely to be on an acknowledgement than the author list, though the prior studies involve small samples. 
+We seek to test this claim across NIH-funded biomedical research and investigate what roles those listed in the acknowledgments performed.
 
 ### Hypothesis
 
