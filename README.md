@@ -13,7 +13,7 @@ Placeholder repo for the upcoming NIH Hackathon.
 
 + [ ] Download and hash source dataset
 + [ ] Literature search
-+ [ ] [data_collection/](data_collection/): Extract acknowledgments text and analyze counts
++ [ ] [data_collection](data_collection/): Extract acknowledgments text and analyze counts
 + [ ] NER names
 + [ ] Evaluate hypothesis #1
 + [ ] Extract job titles/tasks

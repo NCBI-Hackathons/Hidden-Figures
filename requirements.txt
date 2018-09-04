@@ -1,1 +1,6 @@
+# Beautifulsoup, HTML/XML reader
 bs4
+
+
+# Progress bar
+tqdm
