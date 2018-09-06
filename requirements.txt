@@ -1,6 +1,8 @@
 # Beautifulsoup, HTML/XML reader
 bs4
 
+# Needed to run multicore processing
+joblib
 
 # Progress bar
 tqdm
