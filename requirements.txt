@@ -4,5 +4,8 @@ bs4
 # Needed to run multicore processing
 joblib
 
+# For fancy command line options
+docopt
+
 # Progress bar
 tqdm

@@ -1,9 +1,21 @@
+"""Extract acknowledgment data from a PMC tar file, files can be found at
+ftp://ftp.ncbi.nlm.nih.gov/pub/pmc
+
+Usage:
+  P0_parse_XML.py <f_PMC>
+
+Options:
+  -h --help     Show this screen.
+  <f_PMC>       input .xml.tar.gz file
+"""
+
 import tarfile
 from tqdm import tqdm
 import bs4
 import os
 import pandas as pd
 import joblib
+from docopt import docopt
 
 
 def iterate_GZ_file(f_GZ):
@@ -23,7 +35,7 @@ def iterate_GZ_file(f_GZ):
             yield f.path, raw
 
             # Cutoff to help debuging
-            #if k>100:break
+            # if k>100:break
 
 def extract_information(f, raw):
 
@@ -67,8 +79,7 @@ def process_PMC_file(f_PMC):
 
 
 if __name__ == "__main__":
-    
-    f_PMC = 'sources/articles.C-H.xml.tar.gz'
-    process_PMC_file(f_PMC)
+    args = docopt(__doc__)
+    process_PMC_file(args['<f_PMC>'])
 
 
