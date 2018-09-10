@@ -31,22 +31,29 @@ pub_data = pd.read_csv('PMC_info-iSearch_-_Publications-export_2018-09-04-20-53-
 for x in tqdm(pub_data, total=2000000//5000):
     x['PMCID'] = x['PMCID'].str[3:]
     x['PMCID'] = x['PMCID'].str.split(pat=".", expand=True)[0]
-    print(x['PMCID'])
+    x = x[x['PMCID'].str.isnumeric() == True]
+    x['PMCID'] = x['PMCID'].astype(int)
+    #print(x['PMCID'])
     x = x.drop_duplicates(subset=["PMCID"]).set_index("PMCID")
+
+    idx = x.index.isin(merged.index)
+    x = x[idx]
+
+    #print(len(x))
+    #continue
+
     assert(x.index.isna().sum() == 0)
     for col in merge_cols:
-        merged[col] = x[col]
+        merged.loc[x.index, col] = x.ix[x.index, col].values
         #print(merged[merged['Pub Year'].isna() == False])
     #print(merged)
     print(merged['Pub Year'].isna().mean())
 
+
+merged.to_csv("articles.merged_with_data.csv")
+
+
 exit()
-
-print(list(pub_data))
-
-
-for col in merge_cols:
-	rpg[col] = name_genders[col]
 
 
 
