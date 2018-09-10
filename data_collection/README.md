@@ -33,3 +33,8 @@ Saved to extracted/articles.O-Z.xml.tar.gz.csv
 Found 402376 out of 610080 acknowledgments
 ```
 
+Simple parsing results
+
+Total PMC articles: 2,106,536
+Has Acknowledgements: 1,174,911    
+Percent True    55.77%
