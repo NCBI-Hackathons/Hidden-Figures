@@ -1,5 +1,6 @@
 # Beautifulsoup, HTML/XML reader
 bs4
+lxml
 
 # Needed to run multicore processing
 joblib
