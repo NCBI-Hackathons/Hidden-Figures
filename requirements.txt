@@ -9,3 +9,10 @@ docopt
 
 # Progress bar
 tqdm
+
+# Numerical libs
+numpy
+pandas
+
+# NLP
+spacy
