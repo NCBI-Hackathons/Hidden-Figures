@@ -9,7 +9,7 @@ We seek to test this claim across NIH-funded biomedical research and investigate
 
 1. Women are more likely to be on the acknowledgments than the author list would suggest.
 2. The acknowledgment for the types tasks for men and women differ.
-3. The type of praise given men and women differ (_fruitful_ discussion, _outstanding_ analysis)
+3. The type of praise given men and women differ (_fruitful_ discussion, _outstanding_ analysis).
 4. These trends change over time, reflecting more equality.
 
 ### Timeline / Tasks
