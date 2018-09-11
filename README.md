@@ -14,9 +14,9 @@ We seek to test this claim across NIH-funded biomedical research and investigate
 
 ### Timeline / Tasks
 
-+ [ ] Download and hash source dataset
-+ [ ] Literature search
-+ [ ] [data_collection](data_collection/): Extract acknowledgments text and analyze counts
++ [x] Download and hash source dataset
++ [x] Literature search
++ [x] [data_collection](data_collection/): Extract acknowledgments text and analyze counts
 + [ ] NER names
 + [ ] Evaluate hypothesis #1
 + [ ] Extract job titles/tasks
