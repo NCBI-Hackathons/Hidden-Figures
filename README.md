@@ -13,22 +13,6 @@ Specifically, it has been observed that women were more likely to be acknowledge
 4. These trends change over time, reflecting more equality.
 
 
-## Project pipeline
-- Literature review
-  - Historical acknowledgments research
-  - Gender in authorship/acknowledgments
-- Analysis of features
-  - Extract acknowledgments from PMC
-  - Analyze acknowledgment features
-    - % PMC coverage, years, journals, MeSH terms, etc.
-    - False negatives?
-- Natural Language Processing (NLP)
-  - Names → infer gender with genderize.io
-  - Organizations and objects
-  - Acknowledged tasks
-  - Task modifiers (**stretch goal**)
-
-
 ### Literature Review
 Few large-scale studies have been conducted on acknowledgments in research articles; our study is novel in size and scope. Notable previous studies: 
 
@@ -69,15 +53,22 @@ For example, consider [PMC 4959138](https://www.ncbi.nlm.nih.gov/pmc/articles/PM
 </ack>
 ```
 
+### Sentence parsing example
+
+![parsing example](figures/parsing_example_displacy_medium.png)
+
+
 ### PMC acknowledgments over time
 
 ![ack counts](figures/ack_counts_medium.png)
 
 
 ## Natural Language Processing
-### Sentence parsing example
 
-![parsing example](figures/parsing_example_displacy_medium.png)
+### Extract names and infer gender 
+Acknowledgments and, to a lesser extent, authorship is skewed toward men.
+
+![fraction female authors](figures/counts_of_authorship_ack.png)
 
 ### Summary stats
 For the PubMed Central subset with acknowledgments (PMCA): 
@@ -86,7 +77,7 @@ For the PubMed Central subset with acknowledgments (PMCA):
 + Fraction of women on PMCA in the pubs: 0.233
 + Median number of people on an acknowledgments: 5
 + Most acknowledgments are uni-gender: 80%
-+ Most of these uni-gender acknowledgments are all-male 202150 vs 47105
++ Most of these uni-gender acknowledgments are all-male 202,150 vs 4,7105
 
 
 ### Quality control
@@ -100,26 +91,23 @@ For the PubMed Central subset with acknowledgments (PMCA):
 | Disclosure | 1.5% |[PMC4147052](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4147052/)|In addition, **Jin Jin** also holds stock in Eli Lilly
 | Dedication | 0.5% |[PMC4831668](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4831668/)|This paper is dedicated to **José Luis García Ruano** on occasion of his retirement
 
-### Extract names and infer gender 
-Acknowledgments and, to a lesser extent, authorship is skewed toward men.
-
-![fraction female authors](figures/counts_of_authorship_ack.png)
 
 ### Extract [MeSH terms](https://www.ncbi.nlm.nih.gov/mesh) and analyze based on presence of acknowledgment
-MeSH terms from PMC articles without acknowledgments tend to be clincally-focused.
+MeSH terms from PMC articles **without** acknowledgments tend to be clincally-focused.
 ![](figures/Ack_absent_wordcloud.png)
 
-MeSH terms from PMC articles with acknowledgments tend to focus on fundamental research.
+MeSH terms from PMC articles **with** acknowledgments tend to focus on fundamental research.
 ![](figures/Ack_present_wordcloud.png)
 
 ### Extract nouns and verbs associated with acknowledged individuals
 Words associated with acknowledged individuals, colored by gender: purple words are predominantly associated with men and green words are predominantly associate with women; grey is used for words that are equally associated with both genders. Larger words appear more frequently. Gender-specific words were preferentially selected.
+**Nouns**
 ![](figures/cloud_gendered_nouns.png)
 
-
+**Verbs**
 ![](figures/cloud_gendered_verbs.png)
 
-We manually curated a list of keywords to group acknowledgements into six categories based on the type of contribution being acknowledged: Manuscript, Coordination, Materials, Analysis, Procedures, Advice. For each category, we calculated the representation of female names.
+We manually curated a list of [keywords](keywords_extraction/candidate_keywords.txt) to group acknowledgements into six categories based on the type of contribution being acknowledged: Manuscript, Coordination, Materials, Analysis, Procedures, Advice. For each category, we calculated the representation of female names.
 
 | Category | Percent of female names|
 |--|--|
@@ -132,6 +120,20 @@ We manually curated a list of keywords to group acknowledgements into six catego
 
 ### [Whimsy in acknowledgments](fun_quotes.md)
 
+## Project pipeline
+- Literature review
+  - Historical acknowledgments research
+  - Gender in authorship/acknowledgments
+- Analysis of features
+  - Extract acknowledgments from PMC
+  - Analyze acknowledgment features
+    - % PMC coverage, years, journals, MeSH terms, etc.
+    - False negatives?
+- Natural Language Processing (NLP)
+  - Names → infer gender with genderize.io
+  - Organizations and objects
+  - Acknowledged tasks
+  - Task modifiers (**stretch goal**)
 
 ### Contributors
 
