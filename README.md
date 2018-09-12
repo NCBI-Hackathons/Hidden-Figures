@@ -71,13 +71,13 @@ For example, consider [PMC 4959138](https://www.ncbi.nlm.nih.gov/pmc/articles/PM
 
 ### PMC acknowledgments over time
 
-![ack counts](figures/ack_counts_small.png)
+![ack counts](figures/ack_counts_medium.png)
 
 
 ## Natural Language Processing
 ### Sentence parsing example
 
-![parsing example](figures/parsing_example_displacy_small.png)
+![parsing example](figures/parsing_example_displacy_medium.png)
 
 ### Summary stats
 For the PubMed Central subset with acknowledgments (PMCA): 
