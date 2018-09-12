@@ -5,6 +5,17 @@ Prior literature suggests there is a gender discrepancy between males and female
 Specifically, it has been noted that females are more likely to be on an acknowledgement than the author list, though the prior studies involve small samples. 
 We seek to test this claim across NIH-funded biomedical research and investigate what roles those listed in the acknowledgments performed.
 
+### Observations
+
+Call the PubMed Cental subset with acknowledgements PMCA.
+
++ Number of pubs in PMCA with authors with idenifiable genders: 312,237
++ Fraction of females in PMCA in the acks: 0.424 
++ Fraction of females on PMCA in the pubs: 0.233
++ Median number of people on an ack: 5
++ Most acks are uni-gender, 80%
++ Most of these uni-gender acks are all-male 202150 vs 47105
+
 ### Hypothesis
 
 1. Women are more likely to be on the acknowledgments than the author list would suggest.
@@ -17,8 +28,8 @@ We seek to test this claim across NIH-funded biomedical research and investigate
 + [x] Download and hash source dataset
 + [x] Literature search
 + [x] [data_collection](data_collection/): Extract acknowledgments text and analyze counts
-+ [ ] NER names
-+ [ ] Evaluate hypothesis #1
++ [X] NER names
++ [X] Evaluate hypothesis #1
 + [ ] Extract job titles/tasks
 + [ ] Evaluate hypothesis #2
 + [ ] NER entities
