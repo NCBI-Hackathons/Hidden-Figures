@@ -29,11 +29,13 @@ Gender specific word clouds used in the acknowledgment section. Colored by gende
 
 We manually developed a list of keywords that grouped the types of acknowledgement into four categories: Materials, Analysis, Procedure, Advice. For each category, we calculated the representation of female names:
 
-| Category | Fraction of female names|
+| Category | Percent of female names|
 |--|--|
-|material| 0.378|
-|analysis| 0.414|
-|procedure| 0.447|
-|advice| 0.326|
+|manuscript| 52.1%|
+|coordination|50.0%|
+|procedure| 44.7%|
+|analysis| 41.4% |
+|material| 37.8% |
+|advice| 32.6%|
 
 Both the word cloud and keyword summaries show that men are more likely to be thanked for their discussion and advice, while women are more likely to be thanked for the work performed in both the laboratory and the manuscript.

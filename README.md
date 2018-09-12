@@ -3,7 +3,7 @@
 ## Project Overview
 An investigation into the acknowledgments section of research articles within [PubMed Central](https://www.ncbi.nlm.nih.gov/pmc/).
 Prior literature suggests there is a gender discrepancy between men and women in authorship and acknowledgment. 
-Specifically, it has been observed that women were more likely to be acknowledged rather than the author list, in a small sample of  [theoretical population genetics publications](https://www.biorxiv.org/content/early/2018/07/05/360933). We tested this observation  on a large-scale across biomedical research articles and investigated the contributions of acknowledged individuals.
+Specifically, it has been observed that women were more likely to be acknowledged rather than the author list, in a small sample of  [theoretical population genetics publications](https://www.biorxiv.org/content/early/2018/07/05/360933). We tested this observation on a large-scale across biomedical research articles and investigated the contributions of acknowledged individuals.
 
 ## Hypotheses
 
@@ -69,21 +69,24 @@ For example, consider [PMC 4959138](https://www.ncbi.nlm.nih.gov/pmc/articles/PM
 </ack>
 ```
 
-### Acknowledgments summary statistics
-For the PubMed Cental subset with acknowledgments (PMCA): 
-+ Number of pubs in PMCA with authors with idenifiable genders: 312,237
-+ Fraction of women in PMCA in the acknowledgments: 0.424 
-+ Fraction of women on PMCA in the pubs: 0.233
-+ Median number of people on an acknowledgments: 5
-+ Most acknowledgments are uni-gender: 80%
-+ Most of these uni-gender acknowledgments are all-male 202150 vs 47105
+### PMC acknowledgments over time
 
 ![ack counts](figures/ack_counts_small.png)
 
 
 ## Natural Language Processing
-###Sentence parsing example
+### Sentence parsing example
+
 ![parsing example](figures/parsing_example_displacy_small.png)
+
+### Summary stats
+For the PubMed Central subset with acknowledgments (PMCA): 
++ Number of pubs in PMCA with authors with identifiable genders: 312,237
++ Fraction of women in PMCA in the acknowledgments: 0.424 
++ Fraction of women on PMCA in the pubs: 0.233
++ Median number of people on an acknowledgments: 5
++ Most acknowledgments are uni-gender: 80%
++ Most of these uni-gender acknowledgments are all-male 202150 vs 47105
 
 
 ### Quality control
@@ -98,10 +101,37 @@ For the PubMed Cental subset with acknowledgments (PMCA):
 | Dedication | 0.5% |[PMC4831668](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4831668/)|This paper is dedicated to **José Luis García Ruano** on occasion of his retirement
 
 ### Extract names and infer gender 
+Acknowledgments and, to a lesser extent, authorship is skewed toward men.
 
 ![fraction female authors](figures/counts_of_authorship_ack.png)
 
-Acknowledgments and, to a lesser extent, authorship is skewed toward men.
+### Extract [MeSH terms](https://www.ncbi.nlm.nih.gov/mesh) and analyze based on presence of acknowledgment
+MeSH terms from PMC articles without acknowledgments tend to be clincally-focused.
+![](figures/Ack_absent_wordcloud.png)
+
+MeSH terms from PMC articles with acknowledgments tend to focus on fundamental research.
+![](figures/Ack_present_wordcloud.png)
+
+### Extract nouns and verbs associated with acknowledged individuals
+Words associated with acknowledged individuals, colored by gender: purple words are predominantly associated with men and green words are predominantly associate with women; grey is used for words that are equally associated with both genders. Larger words appear more frequently. Gender-specific words were preferentially selected.
+![](figures/cloud_gendered_nouns.png)
+
+
+![](figures/cloud_gendered_verbs.png)
+
+We manually curated a list of keywords to group acknowledgements into six categories based on the type of contribution being acknowledged: Manuscript, Coordination, Materials, Analysis, Procedures, Advice. For each category, we calculated the representation of female names.
+
+| Category | Percent of female names|
+|--|--|
+|manuscript| 52.1%|
+|coordination|50.0%|
+|procedure| 44.7%|
+|analysis| 41.4% |
+|material| 37.8% |
+|advice| 32.6%|
+
+### [Whimsy in acknowledgments](fun_quotes.md)
+
 
 ### Contributors
 
