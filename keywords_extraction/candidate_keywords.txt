@@ -24,7 +24,8 @@ comment:d
 comments:d
 compiling:e
 compilation:e
-coordiation:f
+coordination:f
+coordinating:f
 culture:c
 data:b
 delivery:c

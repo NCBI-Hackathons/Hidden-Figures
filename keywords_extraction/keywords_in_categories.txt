@@ -1,0 +1,6 @@
+material: animal;animals;antibodies;antibody;bacteria;cell;cells;chemical;chemicals;dna;drosophila;enzyme;fish;mice;mouse;peptide;peptides;plasmid;plasmids;primer;primers;protein;rat;rats;reagent;reagents;rna;sample;sequence;sera;serum;strain;tissue;vector;vectors;virus;viruses
+analysis: analyses;analysis;data;software;statistical;statistics
+procedure: assay;assays;blot;blots;blotting;chromatography;co-ip;coip;culture;delivery;electrophoresis;elisa;fingerprinting;hplc;imaging;immunoprecipitation;imprinting;injection;ip;microarray;microarrays;microscopy;pcr;pet;printing;scan;scanning;sem;sequencing;staining;tem;transfection
+advice: advice;comment;comments;design;discussion;discussions;guidance;suggestion;suggestions
+manuscript: compilation;compiling;editing;proofreading;writing
+coordination: assistance;assisting;coordinating;coordination;help;recruiting;recruitment

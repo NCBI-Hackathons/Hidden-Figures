@@ -2,3 +2,5 @@ a:material
 b:analysis
 c:procedure
 d:advice
+e:manuscript
+f:coordination

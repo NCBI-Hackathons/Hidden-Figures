@@ -1,9 +1,9 @@
 Total number of sentences: 1035957
-Total number of sentences that contain keywords: 621946
+Total number of sentences that contain keywords: 623690
 
 material:134505
 analysis:150218
 procedure:58373
 advice:227918
 manuscript:34784
-general:282771
+coordination:285965
