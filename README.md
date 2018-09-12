@@ -1,4 +1,5 @@
 # Hidden Figures
+_A pipeline for inferring gender for acknowledged individuals in scientific literature on a massive scale_
 
 ## Project Overview
 An investigation into the acknowledgments section of research articles within [PubMed Central](https://www.ncbi.nlm.nih.gov/pmc/).
