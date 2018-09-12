@@ -108,7 +108,7 @@ Words associated with acknowledged individuals, colored by gender: purple words 
 
 ![](figures/cloud_gendered_verbs.png)
 
-We manually curated a list of [keywords](keywords_extraction/candidate_keywords.txt) to group acknowledgements into six categories based on the type of contribution being acknowledged: Manuscript, Coordination, Materials, Analysis, Procedures, Advice. For each category, we calculated the representation of female names.
+We manually curated a list of [keywords](keywords_extraction/candidate_keywords.txt) to group acknowledgements into six categories based on the type of contribution being acknowledged: Manuscript, Coordination, Procedure, Analysis, Materials, and Advice. For each category, we calculated the representation of female names.
 
 | Category | Percent of female names|
 |--|--|
@@ -116,7 +116,7 @@ We manually curated a list of [keywords](keywords_extraction/candidate_keywords.
 |coordination|50.0%|
 |procedure| 44.7%|
 |analysis| 41.4% |
-|material| 37.8% |
+|materials| 37.8% |
 |advice| 32.6%|
 
 ### [Whimsy in acknowledgments](fun_quotes.md)
