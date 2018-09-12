@@ -7,6 +7,7 @@ Specifically, it has been observed that women were more likely to be acknowledge
 
 ### Background
 Few large-scale studies have been conducted on acknowledgments in research articles; our study is novel in size and scope. Notable previous studies: 
+
 ![Khabsa et al 2012](https://github.com/NCBI-Hackathons/Hidden-Figures/blob/master/figures/Khabsa%20clip.PNG)
 - extracted acknowledgments sections from articles in [CiteSeerX](http://citeseer.ist.psu.edu/index;jsessionid=75C159A83DB7C9F3624F934430F5F3E7)
 - identified individuals and organizations
