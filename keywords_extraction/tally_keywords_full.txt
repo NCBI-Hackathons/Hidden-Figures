@@ -1,0 +1,7 @@
+Total number of sentences: 840563
+Total number of sentences that contain keywords: 375771
+
+material:103789
+analysis:120844
+procedure:48094
+advice:188318
