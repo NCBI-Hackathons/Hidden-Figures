@@ -9,12 +9,14 @@ Specifically, it has been observed that women were more likely to be acknowledge
 Few large-scale studies have been conducted on acknowledgments in research articles; our study is novel in size and scope. Notable previous studies: 
 
 ![Khabsa et al 2012](figures/Khabsa%20clip.PNG)
+
 [Khabsa et al., 2012](https://link.springer.com/chapter/10.1007/978-3-642-29047-3_43)
 - extracted acknowledgments sections from articles in [CiteSeerX](http://citeseer.ist.psu.edu/index;jsessionid=75C159A83DB7C9F3624F934430F5F3E7)
 - identified individuals and organizations
 - build network graph of acknowledged entities and authors
 
 ![Paul-Hus et al 2017](figures/Paul-Hus%20clip.PNG)
+
 [Paul-Hus et al., 2017](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0185578)
 - extracted acknowledgements sections from articles in [Web of Science](https://clarivate.com/products/web-of-science/)
 - identified acknowledged contributions
