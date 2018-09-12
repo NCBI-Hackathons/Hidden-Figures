@@ -98,7 +98,7 @@ MeSH terms from PMC articles **with** acknowledgments tend to focus on fundament
 ![](figures/Ack_present_wordcloud.png)
 
 ### Extract nouns and verbs associated with acknowledged individuals
-Words associated with acknowledged individuals, colored by gender: purple words are predominantly associated with men and green words are predominantly associate with women; grey is used for words that are equally associated with both genders. Larger words appear more frequently. Gender-specific words were preferentially selected.
+Words associated with acknowledged individuals, colored by gender: purple words are predominantly associated with men and green words are predominantly associated with women; grey is used for words that are equally associated with both genders. Larger words appear more frequently. Gender-specific words were preferentially selected.
 
 **Nouns**
 
