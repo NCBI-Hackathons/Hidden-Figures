@@ -8,7 +8,7 @@ Specifically, it has been observed that women were more likely to be acknowledge
 ## Hypotheses
 
 1. Women are more likely to be on the acknowledgments than the author list would suggest.
-2. The acknowledgment for the types tasks for men and women differ.
+2. The acknowledgment for the types of tasks for men and women differ.
 3. The type of praise given men and women differ (_fruitful_ discussion, _outstanding_ analysis).
 4. These trends change over time, reflecting more equality.
 
@@ -47,13 +47,11 @@ For example, consider [PMC 4959138](https://www.ncbi.nlm.nih.gov/pmc/articles/PM
 	valuable comments. This research was partly supported by the Austrian 
 	Science Fund (FWF) under Grant No. P25979-N25 and is an extract out of 
 	the Ph.D. thesis (Moser <xref ref-type="bibr" rid="CR30">2014</xref>).
-    </p>
-    
-   
+    </p> 
 </ack>
 ```
 
-### Sentence parsing example
+### Sentence parsing using [spaCY](https://spacy.io/)
 
 ![parsing example](figures/parsing_example_displacy_medium.png)
 
@@ -65,7 +63,7 @@ For example, consider [PMC 4959138](https://www.ncbi.nlm.nih.gov/pmc/articles/PM
 
 ## Natural Language Processing
 
-### Extract names and infer gender 
+### Extract names and infer gender using [genderize](https://genderize.io/)
 Acknowledgments and, to a lesser extent, authorship is skewed toward men.
 
 ![fraction female authors](figures/counts_of_authorship_ack.png)
@@ -77,7 +75,7 @@ For the PubMed Central subset with acknowledgments (PMCA):
 + Fraction of women on PMCA in the pubs: 0.233
 + Median number of people on an acknowledgments: 5
 + Most acknowledgments are uni-gender: 80%
-+ Most of these uni-gender acknowledgments are all-male 202,150 vs 4,7105
++ Most of these uni-gender acknowledgments are all-male 202,150 vs 47,105
 
 
 ### Quality control
@@ -101,10 +99,13 @@ MeSH terms from PMC articles **with** acknowledgments tend to focus on fundament
 
 ### Extract nouns and verbs associated with acknowledged individuals
 Words associated with acknowledged individuals, colored by gender: purple words are predominantly associated with men and green words are predominantly associate with women; grey is used for words that are equally associated with both genders. Larger words appear more frequently. Gender-specific words were preferentially selected.
+
 **Nouns**
+
 ![](figures/cloud_gendered_nouns.png)
 
 **Verbs**
+
 ![](figures/cloud_gendered_verbs.png)
 
 We manually curated a list of [keywords](keywords_extraction/candidate_keywords.txt) to group acknowledgements into six categories based on the type of contribution being acknowledged: Manuscript, Coordination, Materials, Analysis, Procedures, Advice. For each category, we calculated the representation of female names.
@@ -120,7 +121,16 @@ We manually curated a list of [keywords](keywords_extraction/candidate_keywords.
 
 ### [Whimsy in acknowledgments](fun_quotes.md)
 
-## Project pipeline
+### Contributors
+
++ [Travis Hoppe](https://github.com/thoppe)
++ [Rebecca Meseroll](https://github.com/rmeseroll)
++ [Hao Yu](https://github.com/summer66)
++ [Abbey Zuehlke](https://github.com/zuehlkead)
++ [Grant Jones](https://github.com/grantdjones)
++ [Brad Busse](https://github.com/facepalm)
+
+### Project pipeline
 - Literature review
   - Historical acknowledgments research
   - Gender in authorship/acknowledgments
@@ -135,11 +145,4 @@ We manually curated a list of [keywords](keywords_extraction/candidate_keywords.
   - Acknowledged tasks
   - Task modifiers (**stretch goal**)
 
-### Contributors
 
-+ [Travis Hoppe](https://github.com/thoppe)
-+ [Rebecca Meseroll](https://github.com/rmeseroll)
-+ [Hao Yu](https://github.com/summer66)
-+ [Abbey Zuehlke](https://github.com/zuehlkead)
-+ [Grant Jones](https://github.com/grantdjones)
-+ [Brad Busse](https://github.com/facepalm)
