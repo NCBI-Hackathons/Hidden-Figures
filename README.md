@@ -51,7 +51,7 @@ For example, consider [PMC 4959138](https://www.ncbi.nlm.nih.gov/pmc/articles/PM
 </ack>
 ```
 
-### Sentence parsing using [spaCY](https://spacy.io/)
+### Sentence parsing using [spaCy](https://spacy.io/)
 
 ![parsing example](figures/parsing_example_displacy_medium.png)
 
