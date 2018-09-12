@@ -71,8 +71,8 @@ Acknowledgments and, to a lesser extent, authorship is skewed toward men.
 ### Summary stats
 For the PubMed Central subset with acknowledgments (PMCA): 
 + Number of pubs in PMCA with authors with identifiable genders: 312,237
-+ Fraction of women in PMCA in the acknowledgments: 0.424 
-+ Fraction of women on PMCA in the pubs: 0.233
++ Fraction of women in PMCA in the pubs: 0.424 
++ Fraction of women on PMCA in the acknowledgments: 0.233
 + Median number of people on an acknowledgments: 5
 + Most acknowledgments are uni-gender: 80%
 + Most of these uni-gender acknowledgments are all-male 202,150 vs 47,105
