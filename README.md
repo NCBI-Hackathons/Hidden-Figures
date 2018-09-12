@@ -13,7 +13,7 @@ Few large-scale studies have been conducted on acknowledgments in research artic
 - build network graph of acknowledged entities and authors
 
 ![Paul-Hus et al 2017](https://github.com/NCBI-Hackathons/Hidden-Figures/blob/master/figures/Paul-Hus%20clip.PNG)
-- extracted acknowledgements sections from articles in [Web of Science] (https://clarivate.com/products/web-of-science/)
+- extracted acknowledgements sections from articles in [Web of Science](https://clarivate.com/products/web-of-science/)
 - identified acknowledged contributions
 - analyzed trends in contributions by field of study
 
