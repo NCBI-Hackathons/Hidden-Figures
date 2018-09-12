@@ -11,21 +11,21 @@
 
 # Figures
 
-![](figures/ack_counts.png | width=300)
+![](figures/ack_counts.png )
 Counts of PMC articles with/without acknowledgments.
 
-![](figures/Ack_absent_wordcloud.png |width=300)
+![](figures/Ack_absent_wordcloud.png )
 MeSH terms in abstracts more prevalent in PMC articles _without_ an acknowledgment.
 
-![](figures/Ack_present_wordcloud.png |width=300)
+![](figures/Ack_present_wordcloud.png)
 MeSH terms in abstracts more prevalent in PMC articles _with_ an acknowledgment.
 
 
 Gender specific word clouds used in the acknowledgment section. Colored by gender, purple are dominantly male, green predominately female, grey is used equally by both genders. Sized by word frequency -- gender specific words were preferentially selected.
 
-![](figures/cloud_gendered_nouns.png|width=300)
+![](figures/cloud_gendered_nouns.png)
 
-![](figures/cloud_gendered_verbs.png|width=300)
+![](figures/cloud_gendered_verbs.png)
 
 We manually developed a list of keywords that grouped the types of acknowledgement into four categories: Materials, Analysis, Procedure, Advice. For each category, we calculated the representation of female names:
 
