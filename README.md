@@ -78,11 +78,12 @@ For the PubMed Cental subset with acknowledgments (PMCA):
 + Most acknowledgments are uni-gender: 80%
 + Most of these uni-gender acknowledgments are all-male 202150 vs 47105
 
-![ack counts](figures/ack_counts_small.png)
+![ack counts](figures/ack_counts.png)
 
 
 ## Natural Language Processing
-###Sentence parsing example
+### Sentence parsing example
+
 ![parsing example](figures/parsing_example_displacy_small.png)
 
 
@@ -102,6 +103,29 @@ For the PubMed Cental subset with acknowledgments (PMCA):
 ![fraction female authors](figures/counts_of_authorship_ack.png)
 
 Acknowledgments and, to a lesser extent, authorship is skewed toward men.
+
+### Extract [MeSH terms](https://www.ncbi.nlm.nih.gov/mesh) 
+MeSH terms from PMC articles without acknowledgments tend to be clincally-focused.
+![](figures/Ack_absent_wordcloud.png)
+
+MeSH terms from PMC articles with acknowledgments tend to focus on fundamental research.
+![](figures/Ack_present_wordcloud.png)
+
+### Extract nouns and verbs associated with acknowledged individuals
+Words associated with acknowledged individuals, colored by gender: purple words are predominantly associated with men and green words are predominantly associate with women; grey is used for words that are equally associated with both genders. Larger words appear more frequently. Gender-specific words were preferentially selected.
+![](figures/cloud_gendered_nouns.png)
+
+
+![](figures/cloud_gendered_verbs.png)
+
+We manually curated a list of keywords to group acknowledgements into four categories based on the type of contribution being acknowledged: Materials, Analysis, Procedures, Advice. For each category, we calculated the representation of female names.
+
+| Category | Fraction of female names|
+|--|--|
+|materials| 0.378|
+|analysis| 0.414|
+|procedures| 0.447|
+|advice| 0.326|
 
 ### Contributors
 
