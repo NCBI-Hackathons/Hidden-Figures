@@ -6,7 +6,7 @@ Prior literature suggests there is a gender discrepancy between men and women in
 Specifically, it has been observed that women were more likely to be acknowledged rather than the author list, in a small sample of  [theoretical population genetics publications](https://www.biorxiv.org/content/early/2018/07/05/360933). We tested this observation  on a large-scale across biomedical research articles and investigated the contributions of acknowledged individuals.
 
 ### Background
-Few large-scale studies have been conducted on acknowledgments in research articles.  
+Few large-scale studies have been conducted on acknowledgments in research articles; our study is novel in size and scope. Notable previous studies: 
 ![Khabsa et al 2012](https://github.com/NCBI-Hackathons/Hidden-Figures/blob/master/figures/Khabsa%20clip.PNG)
 - extracted acknowledgments sections from articles in [CiteSeerX](http://citeseer.ist.psu.edu/index;jsessionid=75C159A83DB7C9F3624F934430F5F3E7)
 - identified individuals and organizations
@@ -17,7 +17,7 @@ Few large-scale studies have been conducted on acknowledgments in research artic
 - identified acknowledged contributions
 - analyzed trends in contributions by field of study
 
-Our study is novel in size and scope. 
+
 
 ### Observations
 
