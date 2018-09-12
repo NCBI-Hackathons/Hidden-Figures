@@ -121,7 +121,7 @@ We manually curated a list of [keywords](keywords_extraction/candidate_keywords.
 
 ### [Whimsy in acknowledgments](fun_quotes.md)
 
-### Contributors
+## Contributors
 
 + [Travis Hoppe](https://github.com/thoppe)
 + [Rebecca Meseroll](https://github.com/rmeseroll)
