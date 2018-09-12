@@ -32,14 +32,14 @@ Specifically, it has been observed that women were more likely to be acknowledge
 ### Literature Review
 Few large-scale studies have been conducted on acknowledgments in research articles; our study is novel in size and scope. Notable previous studies: 
 
-![Khabsa et al 2012](figures/Khabsa%20clip.PNG)
+![Khabsa et al 2012](figures/Khabsa_clip_small.png)
 
 [Khabsa et al., 2012](https://link.springer.com/chapter/10.1007/978-3-642-29047-3_43)
 - extracted acknowledgments sections from articles in [CiteSeerX](http://citeseer.ist.psu.edu/index;jsessionid=75C159A83DB7C9F3624F934430F5F3E7)
 - identified individuals and organizations
 - build network graph of acknowledged entities and authors
 
-![Paul-Hus et al 2017](figures/Paul-Hus%20clip.PNG)
+![Paul-Hus et al 2017](figures/Paul-Hus_clip_small.png)
 
 [Paul-Hus et al., 2017](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0185578)
 - extracted acknowledgements sections from articles in [Web of Science](https://clarivate.com/products/web-of-science/)
@@ -78,17 +78,30 @@ For the PubMed Cental subset with acknowledgments (PMCA):
 + Most acknowledgments are uni-gender: 80%
 + Most of these uni-gender acknowledgments are all-male 202150 vs 47105
 
-![ack counts](figures/ack%counts.png)
+![ack counts](figures/ack_counts_small.png)
 
 
 ## Natural Language Processing
 ###Sentence parsing example
-![parsing example](figures/parsing_example_displacy.PNG)
+![parsing example](figures/parsing_example_displacy_small.png)
+
+
+### Quality control
+
+| Acknowledgment Name Parsing Error | Occurrence |PMCID | Example
+|--|--|--|--
+| Author's Name Listed  | 4.5% | [PMC3339585](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3339585/) | **Smriti Shrivastava** is thankful to CSIR for Senior Research Fellowship
+| Fellowship Name|2.0%|[PMC5864053](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5864053/)|J.S. was funded by a Biotechnology and Biological Sciences Research Council (BBSRC) **David Phillips Fellowship** (BB/L024551/1)
+|Organization Name |2.0%|[PMC4160263](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4160263/)|National Institute of Biomedical Imaging and Bioengineering Grant R01 EB006745 **Stanford Bio-X**, the American Heart Association (Western States Affiliates)
+| Award Name | 1.5% |[PMC4189622](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4189622/)|**Seed Grant** provided by Michigan Technological University (MTU)
+| Disclosure | 1.5% |[PMC4147052](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4147052/)|In addition, **Jin Jin** also holds stock in Eli Lilly
+| Dedication | 0.5% |[PMC4831668](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4831668/)|This paper is dedicated to **José Luis García Ruano** on occasion of his retirement
 
 ### Extract names and infer gender 
 
+![fraction female authors](figures/counts_of_authorship_ack.png)
 
-
+Acknowledgments and, to a lesser extent, authorship is skewed toward men.
 
 ### Contributors
 
