@@ -76,7 +76,7 @@ For the PubMed Central subset with acknowledgments (PMCA):
 + Median number of people on an acknowledgments: 5
 + Most acknowledgments are uni-gender: 80%
 + Most of these uni-gender acknowledgments are all-male 202,150 vs 47,105
-
++ Publications with acknowledgments have a much higher [RCR](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002541) than those without 0.8 vs 0.4.
 
 ### Quality control
 
