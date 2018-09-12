@@ -72,16 +72,20 @@ For example, consider [PMC 4959138](https://www.ncbi.nlm.nih.gov/pmc/articles/PM
 ### Acknowledgments summary statistics
 For the PubMed Cental subset with acknowledgments (PMCA): 
 + Number of pubs in PMCA with authors with idenifiable genders: 312,237
-+ Fraction of females in PMCA in the acks: 0.424 
-+ Fraction of females on PMCA in the pubs: 0.233
-+ Median number of people on an ack: 5
-+ Most acks are uni-gender, 80%
-+ Most of these uni-gender acks are all-male 202150 vs 47105
++ Fraction of women in PMCA in the acknowledgments: 0.424 
++ Fraction of women on PMCA in the pubs: 0.233
++ Median number of people on an acknowledgments: 5
++ Most acknowledgments are uni-gender: 80%
++ Most of these uni-gender acknowledgments are all-male 202150 vs 47105
 
-![ack counts](figures/ack counts.png)
+![ack counts](figures/ack%counts.png)
 
 
 ## Natural Language Processing
+###Sentence parsing example
+![parsing example](figures/parsing_example_displacy.PNG)
+
+### Extract names and infer gender 
 
 
 
