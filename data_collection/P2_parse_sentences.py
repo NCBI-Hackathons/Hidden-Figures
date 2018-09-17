@@ -23,7 +23,7 @@ nlp = sp.load('en')
 load_dest = 'extracted/'
 save_dest = 'parsed/'
 os.system(f'mkdir -p {save_dest}')
-cutoff = 50
+cutoff = 10**20
 
 F_CSV = glob.glob(os.path.join(load_dest,'*.csv'))
 print(f"Found {len(F_CSV)} files to parse.")

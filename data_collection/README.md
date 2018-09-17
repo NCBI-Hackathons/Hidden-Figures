@@ -38,3 +38,28 @@ Simple parsing results
 Total PMC articles: 2,106,536
 Has Acknowledgements: 1,174,911    
 Percent True    55.77%
+
+# Parsed results, per publication
+
+```
+         n_sentences       n_people
+count  747525.000000  747525.000000
+mean        1.742841       4.285726
+std         2.014077       9.891483
+min         1.000000       1.000000
+25%         1.000000       1.000000
+50%         1.000000       3.000000
+75%         2.000000       5.000000
+max       375.000000    2424.000000
+```
+
+# Examples of very high people counts
+
+```
+PLoS_Med/PMC4380415.nxml	228	2424
+PLoS_One/PMC4411156.nxml	50	2197
+Surg_Endosc/PMC6061087.nxml	139	1435
+PLoS_One/PMC4605674.nxml	51	1111
+Crit_Care/PMC6097245.nxml	319	1009
+Crit_Care/PMC5998562.nxml	275	996
+```
