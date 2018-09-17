@@ -1,2 +1,5 @@
 *~
 \#*
+
+# Checkpoints will never need to be comitted
+*.ipynb_checkpoints/*
