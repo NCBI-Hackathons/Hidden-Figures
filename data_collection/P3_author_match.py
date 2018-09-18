@@ -35,7 +35,10 @@ df = pd.read_csv(
 # Clean the PMCID field in df to just the numeric part and set the index
 df["PMCID"] = df.filename.str.split('/').apply(lambda x:x[-1])
 df["PMCID"] = df.PMCID.str.split('.').apply(lambda x:x[0])
-df["PMCID"] = df.PMCID.str[3:].astype(int)
+df["PMCID"] = df.PMCID.str[3:]
+df = df[df.PMCID.str.isnumeric()]
+
+df["PMCID"] = df.PMCID.astype(int)
 #df = df.set_index("PMCID", drop=False)
 
 # Clean the PMCID field in PMC to just the numeric part and set the index
@@ -47,7 +50,9 @@ idx1 = PMC.PMCID.str.find('_') == -1
 PMC = PMC[idx0 & idx1]
 
 PMC.PMCID = PMC.PMCID.astype(int)
+PMC = PMC.drop_duplicates(subset=["PMCID"])
 PMC = PMC.set_index("PMCID")
+PMC = PMC.dropna(subset=["Author Last Name"])
 
 
 # Just take the overlap of the dataframes
@@ -73,6 +78,10 @@ for k, row in tqdm(df.iterrows(), total=len(df)):
 
     # Simple filter to remove more support sentences
     if "was supported by" in row.sentence.lower():
+        continue
+
+    # Check here if there are any names
+    if type(row.names) == float:
         continue
     
     pmcid = row.PMCID
@@ -130,7 +139,7 @@ for k, row in tqdm(df.iterrows(), total=len(df)):
         "PMCID":pmcid,
         "sentence":row.sentence,
         "gender_score":g_score,
-        "name":name,
+        "name":filtered_names[0],
     })
 
 
