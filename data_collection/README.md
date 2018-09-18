@@ -63,3 +63,9 @@ PLoS_One/PMC4605674.nxml	51	1111
 Crit_Care/PMC6097245.nxml	319	1009
 Crit_Care/PMC5998562.nxml	275	996
 ```
+
+Sources of error identified in the Hackathon that have been corrected in later versions:
+
++ Removing names that appear in the author lists
++ Stemming/lemmatizing words
++ Removing more sections like funding/disclosure/etc
