@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 import collections
 from scipy.stats import binom_test
 from tqdm import tqdm
@@ -57,6 +58,20 @@ p_value = [binom_test(x*n,n,p=expected) for x,n in
            tqdm(zip(df.avg_gender_score, df.observations))]
 df["p_value"] = p_value
 
+df.to_csv("results/gendered_POS_scores.csv")
+
+df["effect_size"] = df.avg_gender_score - df.loc["_baseline", "NOUN"].avg_gender_score 
+
+idx = (
+    (df["p_value"] <= 0.01) &
+    (df["observations"] >= 300) &
+    (np.abs(df["effect_size"]) > 0.01)
+)
+idx.loc["_baseline", "NOUN"] = True
+idx.loc["_baseline", "VERB"] = True
+idx.loc["_baseline", "ADJ"] = True
+
+df = df[idx]
 
 print(df)
-df.to_csv("results/gendered_POS_scores.csv")
+df.to_csv("results/gendered_POS_scores_top_results.csv")
