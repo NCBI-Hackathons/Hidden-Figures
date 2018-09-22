@@ -18,3 +18,8 @@ pandas
 # NLP
 spacy
 unidecode
+
+# Plotting and word clouds
+matplotlib
+seaborn
+wordcloud
