@@ -1,0 +1,13 @@
+
+1. Materials. People are appreciated for providing materials ranging from animals, cells, bacteria, to plasmids, sera, fixed tissues, urine samples, etc.
+2. Analysis. People that performed analysis for the study are often acknowledged. The types of analysis include statistical analysis, data analysis, and software related analysis.
+    2.1 software or computational alaysis
+    2.2 other types of analysis
+3. Procedures. People are also thanked for various lab operations. These operations include routine experiments or lab procedures such as cell culture, genotyping, blotting, PCR. They could also be more specialized techniques such as TEM, SEM, DNA sequencing, and microarray.
+    3.1 routine lab operations: genotyping, cell culture, blotting, pcr, flow cytometry, histology
+    3.2 specialized technologies: EM, sequencing, microarray, mass spectrometry
+4. Advice. A large portion of acknowledgment thank people for giving advice, suggestions, or guidance to the study or manuscript. This category also appreciates people that commented on or discussed the study or manuscript.
+5. Manuscript. People who contributed to writing, compiling, and proofreading the manuscript are often acknowledged.
+6. Coordination and other general help. Some articles acknowledge people whose contribution is not as specific. This type of contribution is generally mentioned as “assistance”, “help”, "preparation", or “coordination”.
+
+
