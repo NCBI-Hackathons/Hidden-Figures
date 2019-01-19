@@ -34,6 +34,12 @@ hist_kws={"rwidth":0.75, 'alpha':0.75, 'align':'left'}
 
 bins = np.arange(1, len(info.n_sentences.unique()) + 2)
 
+n_sent_raw = info.groupby("n_sentences").size()
+n_sent_raw.to_csv("results/Number_of_Sentences_on_Ack.csv")
+
+n_people_raw = info.groupby("n_people").size()
+n_people_raw.to_csv("results/Number_of_People_on_Ack.csv")
+
 
 sns.distplot(info.n_sentences, kde=False, bins=bins, hist_kws=hist_kws)
 #plt.xlim(xmin=1)
@@ -45,6 +51,8 @@ sns.despine()
 plt.tight_layout()
 
 plt.savefig("results/Number_of_Sentences_on_Ack.png")
+
+
 
 
 ax = plt.figure(figsize=(16/2., 9/2.)).gca()
