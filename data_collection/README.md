@@ -61,6 +61,4 @@ Data can be found in [results](results)
 
 ![](results/Number_of_People_on_Ack.png)
 
-![](results/Number_of_Sentences_on_Ack.csv)
-
-
+![](results/Number_of_Sentences_on_Ack.png)
