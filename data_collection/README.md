@@ -1,3 +1,50 @@
+## Updates:
+
+Sources of error identified in the Hackathon that have been corrected in later versions:
+
++ Removing names that appear in the author lists
++ Stemming/lemmatizing words
++ Removing more sections like funding/disclosure/etc
+
+## Data stats
+
+Dataset considers 1980-2017:
+
++ Total PMC articles: 3,769,214
++ Pubs with proper acknowledgements (at least one name and doesn't match author list): 670,408
++ Number of sentences (possibly multiple per paper) extracted with at least one name 1,370,971
++ Number of sentences extracted with a single name 315,963. Used for the adjective and noun plots.
++ Publications with acknowledgments have a much higher RCR than those without 0.8 vs 0.4.
++ Mean/Median number of proper people on the acknowledgments: 4.29, 3.
++ Fraction of women proper acknowledgments: 0.395.
+
+
+## Updated figures
+
+Data can be found in [results](results)
+
+![](results/Number_of_Ack_per_Year.png)
+
+![](results/Number_of_People_on_Ack.png)
+
+![](results/Number_of_Sentences_on_Ack.png)
+
+
+# Examples of very high people counts
+
+```
+Publication                 n_sentences n_people
+PLoS_Med/PMC4380415.nxml	228	2424
+PLoS_One/PMC4411156.nxml	50	2197
+Surg_Endosc/PMC6061087.nxml	139	1435
+PLoS_One/PMC4605674.nxml	51	1111
+Crit_Care/PMC6097245.nxml	319	1009
+Crit_Care/PMC5998562.nxml	275	996
+```
+
+
+## Data integrity 
+
 Access dates:
 
 ```
@@ -28,45 +75,3 @@ min         1.000000       1.000000
 75%         2.000000       5.000000
 max       375.000000    2424.000000
 ```
-
-# Examples of very high people counts
-
-```
-Publication                 n_sentences n_people
-PLoS_Med/PMC4380415.nxml	228	2424
-PLoS_One/PMC4411156.nxml	50	2197
-Surg_Endosc/PMC6061087.nxml	139	1435
-PLoS_One/PMC4605674.nxml	51	1111
-Crit_Care/PMC6097245.nxml	319	1009
-Crit_Care/PMC5998562.nxml	275	996
-```
-
-Sources of error identified in the Hackathon that have been corrected in later versions:
-
-+ Removing names that appear in the author lists
-+ Stemming/lemmatizing words
-+ Removing more sections like funding/disclosure/etc
-
-
-## Data stats
-
-Dataset considers 1980-2017:
-
-+ Total PMC articles: 3,769,214
-+ Pubs with proper acknowledgements (at least one name and doesn't match author list): 670,408
-+ Number of sentences (possibly multiple per paper) extracted with at least one name 1,370,971
-+ Number of sentences extracted with a single name 315,963. Used for the adjective and noun plots.
-+ Publications with acknowledgments have a much higher RCR than those without 0.8 vs 0.4.
-+ Mean/Median number of proper people on the acknowledgments 4.29, 3.
-+ Fraction of women on an acknowledgments 0.395.
-
-
-## Update figures
-
-Data can be found in [results](results)
-
-![](results/Number_of_Ack_per_Year.png)
-
-![](results/Number_of_People_on_Ack.png)
-
-![](results/Number_of_Sentences_on_Ack.png)
