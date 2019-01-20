@@ -17,27 +17,9 @@ c8c421d596bbd2685ccece074f76ba9a  articles.I-N.xml.tar.gz
 0fc411c9f4789dff3fb31b8ec4c61f2f  articles.O-Z.xml.tar.gz
 ```
 
-Extracted reference sizes:
-
-```
-Saved to extracted/articles.A-B.xml.tar.gz.csv
-Found 209856 out of 378845 acknowledgments
-
-Saved to extracted/articles.C-H.xml.tar.gz.csv
-Found 235079 out of 464167 acknowledgments
-
-Saved to extracted/articles.I-N.xml.tar.gz.csv
-Found 325844 out of 653444 acknowledgments
-
-Saved to extracted/articles.O-Z.xml.tar.gz.csv
-Found 402376 out of 610080 acknowledgments
-```
-
-Simple parsing results
-
-Total PMC articles: 2,106,536
-Has Acknowledgements: 1,174,911    
-Percent True    55.77%
+From 1980-2017
++ Total PMC articles: 3,769,214
++ Pubs with proper acknowledgements (at least one name and doesn't match author list): 670,408
 
 # Parsed results, per publication
 
@@ -69,3 +51,16 @@ Sources of error identified in the Hackathon that have been corrected in later v
 + Removing names that appear in the author lists
 + Stemming/lemmatizing words
 + Removing more sections like funding/disclosure/etc
+
+
+## Update figures
+
+Data can be found in [results](results)
+
+![](results/Number_of_Ack_per_Year.png)
+
+![](results/Number_of_People_on_Ack.png)
+
+![](results/Number_of_Sentences_on_Ack.csv)
+
+
